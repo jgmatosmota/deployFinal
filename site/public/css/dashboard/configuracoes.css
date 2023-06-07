@@ -1,0 +1,721 @@
+/* VARIAVEIS */
+:root {
+    --letraMenu: 1rem;
+    --corLetraMenu: black;
+    --corPrincipal: #D8C4EC;
+    --corSecundaria: #F3EBFA;
+    --corForte: #812FCD;
+    --tamanhoIcones: 1.5rem;
+}
+
+/* MUDAR CONFORME A PAG */
+.menu-lateral .navbar ul a:nth-child(5) {
+    color: var(--corForte);
+}
+
+.menu-lateral .navbar ul a:nth-child(5) li {
+    background-color: var(--corSecundaria);
+}
+
+/* ---------------TIRAR A MARCAÇÃO DOS OUTROS------------ */
+
+.menu-lateral .navbar ul a:nth-child(4) {
+    color: var(--corLetraMenu);
+}
+
+.menu-lateral .navbar ul a:nth-child(4) li {
+    background-color: var(--corPrincipal);
+}
+
+.menu-lateral .navbar ul a:nth-child(6) {
+    color: var(--corLetraMenu);
+}
+
+.menu-lateral .navbar ul a:nth-child(6) li {
+    background-color: var(--corPrincipal);
+}
+
+.menu-lateral .navbar ul a:hover {
+    color: var(--corForte);
+}
+
+/* --------------------------- */
+
+.configuracoes {
+    padding: 0px 10px 10px 40px;
+}
+
+.configuracoes .abas nav {
+    margin-top: 20px;
+    display: flex;
+    color: #000000;
+    width: 100%;
+    background-color: var(--corSecundaria);
+
+}
+
+
+.configuracoes .abas nav a {
+    display: inline-block;
+    padding: 8px 15px;
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--letraMenu);
+    cursor: pointer;
+}
+
+.configuracoes .abas section {
+    display: none;
+    border-top: 1px solid #000000;
+    margin-top: -1px;
+}
+
+.configuracoes .abas section:target {
+    display: block;
+}
+
+
+.abas nav a.selecionado {
+    background: white;
+    /* border: solid 1 1 1 1px black; */
+    transition: .30s ease;
+    color: var(--corForte);
+    border-top: 1px solid #000000;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+}
+
+
+.configuracoes #caixa_lista {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    padding: 30px;
+    background-color: var(--caixa);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.configuracoes #caixa_lista #infos_principais {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.configuracoes #caixa_lista #infos_principais h3 {
+    color: black;
+    font-weight: var(--letraMedia);
+}
+
+
+.configuracoes #caixa_lista #linha {
+    display: flex;
+    flex-direction: row;
+}
+
+.configuracoes #caixa_lista #linha #titulo {
+    font-weight: var(--letraRegular);
+    width: 12.5vw;
+    text-align: center;
+    /* background-color: #812FCD; */
+    margin: 0px 5px
+}
+
+.configuracoes #caixa_lista #linha #tituloComputador {
+    font-weight: var(--letraRegular);
+    width: 10vw;
+    text-align: center;
+    margin: 0px 5px
+}
+
+
+.configuracoes #caixa_lista #linha #tituloTotalRAM {
+    font-weight: var(--letraRegular);
+    width: 10vw;
+    text-align: center;
+    margin: 0px 5px
+}
+
+.configuracoes #caixa_lista #linha #tituloTotalDisco {
+    font-weight: var(--letraRegular);
+    width: 10vw;
+    text-align: center;
+    /* background-color: #812FCD; */
+    margin: 0px 5px
+}
+
+.configuracoes #caixa_lista #linha #titulo_cpf {
+    font-weight: var(--letraRegular);
+    width: 12vw;
+    text-align: center;
+    /* background-color: #812FCD; */
+    margin: 0px 5px
+}
+
+.configuracoes #caixa_lista #linha #titulo_cargo {
+    font-weight: var(--letraRegular);
+    width: 10vw;
+    text-align: center;
+    /* background-color: #812FCD; */
+    margin: 0px 5px
+}
+
+.configuracoes #caixa_lista #linha #titulo_tipo {
+    font-weight: var(--letraRegular);
+    width: 11vw;
+    text-align: center;
+    /* background-color: #812FCD; */
+    margin: 0px 5px
+}
+
+
+.configuracoes #caixa_lista #linha #titulo_monitoramento {
+    font-weight: var(--letraRegular);
+    width: 15.5vw;
+    text-align: center;
+    /* background-color: #812FCD; */
+    margin: 0px 5px
+}
+
+
+.configuracoes #caixa_lista #linha #titulo_componente {
+    font-weight: var(--letraRegular);
+    width: 13.5vw;
+    text-align: center;
+    /* background-color: #812FCD; */
+    margin: 0px 5px
+}
+
+.configuracoes #caixa_lista #linha #titulo_atencao {
+    font-weight: var(--letraRegular);
+    width: 13.5vw;
+    text-align: center;
+    /* background-color: #812FCD; */
+    margin: 0px 5px
+}
+
+.configuracoes #caixa_lista #linha #titulo_critico {
+    font-weight: var(--letraRegular);
+    width: 13.5vw;
+    text-align: center;
+    /* background-color: #812FCD; */
+    margin: 0px 5px
+}
+
+.configuracoes #caixa_lista #linha #titulo:nth-child(6) {
+    width: 4vw;
+    text-align: center;
+    /* background-color: #812FCD;  */
+    margin: 0px 5px
+}
+
+.configuracoes #caixa_lista #linha #titulo:nth-child(7) {
+    width: 4vw;
+    text-align: center;
+    /* background-color: #812FCD; */
+    margin: 0px 5px
+}
+
+.configuracoes #caixa_lista #linha #dado_cpf {
+    font-weight: var(--letraRegular);
+    font-size: 15px;
+    width: 12vw;
+    text-align: center;
+    /* background-color: #812FCD; */
+    margin: 0px 5px
+}
+
+
+.configuracoes #caixa_lista #linha #dado_nomeFuncionario {
+    font-weight: var(--letraRegular);
+    font-size: 15px;
+    width: 12.5vw;
+    text-align: center;
+    /* background-color: #812FCD; */
+    margin: 0px 5px
+}
+
+.configuracoes #caixa_lista #linha #dado_cargo {
+    font-weight: var(--letraRegular);
+    font-size: 15px;
+    width: 10vw;
+    text-align: center;
+    /* background-color: #812FCD; */
+    margin: 0px 5px
+}
+
+.configuracoes #caixa_lista #linha #dado_email {
+    font-weight: var(--letraRegular);
+    font-size: 15px;
+    width: 12.5vw;
+    text-align: center;
+    /* background-color: #812FCD; */
+    margin: 0px 5px
+}
+
+.configuracoes #caixa_lista #linha #dado_tipoUsuario {
+    font-weight: var(--letraRegular);
+    font-size: 15px;
+    width: 11vw;
+    text-align: center;
+    /* background-color: #812FCD; */
+    margin: 0px 5px
+}
+
+.configuracoes #caixa_lista #linha #editar {
+    font-weight: var(--letraRegular);
+    font-size: 15px;
+    width: 5vw;
+    text-align: center;
+    /* background-color: #812FCD; */
+    margin: 0px 5px;
+    text-decoration: underline;
+    color: var(--corForte);
+    cursor: pointer;
+}
+
+.configuracoes #caixa_lista #linha #deletar {
+    font-weight: var(--letraRegular);
+    font-size: 15px;
+    width: 5vw;
+    text-align: center;
+    /* background-color: #812FCD; */
+    margin: 0px 5px;
+    text-decoration: underline;
+    color: var(--corForte);
+    cursor: pointer;
+}
+
+.configuracoes #caixa_lista #linha #dado_idComputador {
+    font-weight: var(--letraRegular);
+    font-size: 15px;
+    width: 10vw;
+    text-align: center;
+    /* background-color: #812FCD; */
+    margin: 0px 5px
+}
+
+.configuracoes #caixa_lista #linha #dado_macAddress {
+    font-weight: var(--letraRegular);
+    font-size: 15px;
+    width: 12.5vw;
+    text-align: center;
+    /* background-color: #812FCD; */
+    margin: 0px 5px
+}
+
+.configuracoes #caixa_lista #linha #dado_sistemaOperacional {
+    font-weight: var(--letraRegular);
+    font-size: 15px;
+    width: 12.5vw;
+    text-align: center;
+    /* background-color: #812FCD; */
+    margin: 0px 5px
+}
+
+.configuracoes #caixa_lista #linha #dado_totalRAM {
+    font-weight: var(--letraRegular);
+    font-size: 15px;
+    width: 10vw;
+    text-align: center;
+    /* background-color: #812FCD; */
+    margin: 0px 5px
+}
+
+.configuracoes #caixa_lista #linha #dado_totalDisco {
+    font-weight: var(--letraRegular);
+    font-size: 15px;
+    width: 10vw;
+    text-align: center;
+    /* background-color: #812FCD; */
+    margin: 0px 5px
+}
+
+
+.configuracoes #caixa_lista #linha #dado_monitoramento {
+    font-weight: var(--letraRegular);
+    font-size: 15px;
+    width: 15.5vw;
+    text-align: center;
+    /* background-color: #812FCD; */
+    margin: 0px 5px
+}
+
+
+#aba2 button {
+    font-family: "Poppins", sans-serif;
+    padding: 8px 10px;
+    border-radius: 5px;
+    background-color: var(--corForte);
+    border: 2px solid var(--corForte);
+    font-weight: 500;
+    font-size: 13px;
+    text-align: center;
+    color: #fff;
+}
+
+#aba2 button:hover {
+    cursor: pointer;
+    background-color: #812fcd00;
+    color: #812FCD;
+    transition: 0.8s;
+}
+
+#aba3 button {
+    font-family: "Poppins", sans-serif;
+    padding: 8px 10px;
+    border-radius: 5px;
+    background-color: var(--corForte);
+    border: 2px solid var(--corForte);
+    font-weight: 500;
+    font-size: 13px;
+    text-align: center;
+    color: #fff;
+}
+
+#aba3 button:hover {
+    cursor: pointer;
+    background-color: #812fcd00;
+    color: #812FCD;
+    transition: 0.8s;
+}
+
+#aba4 button {
+    font-family: "Poppins", sans-serif;
+    padding: 8px 10px;
+    border-radius: 5px;
+    background-color: var(--corForte);
+    border: 2px solid var(--corForte);
+    font-weight: 500;
+    font-size: 13px;
+    text-align: center;
+    color: #fff;
+}
+
+#aba4 button:hover {
+    cursor: pointer;
+    background-color: #812fcd00;
+    color: #812FCD;
+    transition: 0.8s;
+}
+/* --------------------------- */
+
+#aba1 #dados_empresa {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--caixa);
+    margin-top: 15px;
+    padding: 30px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+
+}
+
+#aba4 #dados_empresa {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--caixa);
+    margin-top: 15px;
+    padding: 30px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+
+}
+
+#dados_funcionario {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--caixa);
+    margin-top: 15px;
+    padding: 30px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+
+}
+
+#aba2Cadastrar #dados_funcionario {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--caixa);
+    margin-top: 15px;
+    padding: 30px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+
+}
+
+#aba3Editar #dados_computador {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--caixa);
+    margin-top: 15px;
+    padding: 30px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+
+}
+
+#dados_funcionario .foto_empresa {
+    margin-left: 30px;
+
+}
+
+
+#aba1 .caixa_dados {
+    margin-left: 12px;
+}
+
+.caixa_dados {
+    margin-left: 5vw;
+}
+
+#aba2Editar .caixa_dados {
+    margin-left: 40px;
+
+}
+
+#caixa_cadastro {
+    margin-left: 40px;
+}
+
+
+#aba3Editar #dados_computador .foto_computador {
+    margin-left: 30px;
+
+}
+
+
+.configuracoes #caixa_cadastro {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* margin-top: 1vw; */
+    /* padding: 30px; */
+
+}
+
+#caixa_cadastro p {
+    font-size: 15px;
+    margin-top: 1vw;
+    margin-bottom: 20px;
+    ;
+}
+
+.campos #linha {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+    text-align: left;
+
+}
+
+/* UIVERSE IO */
+.campo {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+
+}
+
+.campo label.user-label {
+    font-size: 0.85rem;
+    color: #020202;
+    font-weight: 500;
+    position: relative;
+    top: 0.9rem;
+    margin: 0 0 0 7px;
+    padding: 0 3px;
+    background: #ffffff;
+    width: fit-content;
+    z-index: 1;
+}
+
+.campo input[type=text] {
+    padding: 11px 10px;
+    font-size: 0.75rem;
+    border: 2px #000000 solid;
+    border-radius: 2px;
+    background: #ffffff;
+    width: 25vw;
+    margin: 5px 0px;
+}
+
+.campo input[type=number] {
+    padding: 11px 10px;
+    font-size: 0.75rem;
+    border: 2px #000000 solid;
+    border-radius: 2px;
+    background: #ffffff;
+    width: 14vw;
+    margin: 5px 0px;
+}
+
+.campo:nth-child(2) {
+    margin-left: 30px;
+
+}
+
+.select_tipo {
+    text-align: center;
+}
+
+.select_tipo select {
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+    cursor: pointer;
+
+}
+
+.botoes {
+    text-align: center;
+}
+
+#texto_destaque {
+    /* text-align: center; */
+    /* background-color: #812FCD; */
+    /* border-top: 2px solid #000000; */
+    border-bottom: 2px solid #000000;
+    /* height: 5vh; */
+    /* margin: 0px 0px 2vw 0px; */
+}
+
+.foto_monitor {
+    margin-left: 40px;
+}
+
+.foto_empresa {
+    margin-left: 40px;
+}
+
+#aba1 .foto_empresa {
+    margin-left: 0px;
+}
+
+h3 {
+    margin-top: 5px;
+    font-weight: var(--letraMedia);
+
+    margin-bottom: 5px;
+}
+
+
+
+.botoes button {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--corForte);
+    border: 2px solid var(--corForte);
+    font-weight: 500;
+    font-size: 15px;
+    padding: 4px;
+    margin: 15px;
+    width: 10vw;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+}
+
+.botoes a {
+    text-decoration: none;
+    color: var(--corForte);
+}
+
+.botoes button:hover {
+    cursor: pointer;
+    background-color: #812fcd00;
+    color: #812FCD;
+    transition: 0.8s;
+}
+
+.destaque_txt {
+    font-weight: var(--letraMedia);
+}
+
+
+section button {
+    border: none;
+    border-radius: 0.625em;
+
+    /* cursor: pointer; */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+section button:after {
+    content: "";
+    background: white;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+}
+
+section button:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.icones_parametros {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* height: 200px; */
+}
+
+
+#dados_empresa {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--caixa);
+    margin-top: 15px;
+    padding: 30px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+
+}
+
+
+#caixa_campo {
+    display: flex;
+    flex-direction: row;
+}
+
+#aba4Editar #linha {
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+}
+
+#aba4Editar b {
+    font-weight: var(--letraMedia);
+
+}
+
+#caixa_linha {
+    display: flex;
+    flex-direction: row;
+    /* margin-top: 10px; */
+}
+
+#caixa_linha:nth-child(1) {
+    margin-top: 10px;
+}
+
+
+.campo input[disabled] {
+    border-color: rgba(15, 15, 15, 0.247);
+    color: black;
+    transition: opacity 0.3s ease;
+}
+
+.campo input:not([disabled]) {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+input[type=text]:focus,
+input[type=number]:focus {
+    border-color: #812FCD;
+    outline: none;
+}

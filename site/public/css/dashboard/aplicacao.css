@@ -1,0 +1,180 @@
+/* MUDAR CONFORME A PAG */
+.menu-lateral .navbar ul a:nth-child(6) {
+    color: var(--corForte);
+}
+
+.menu-lateral .navbar ul a:nth-child(6) li {
+    background-color: var(--corSecundaria);
+}
+
+/* ---------------TIRAR A MARCAÇÃO DOS OUTROS------------ */
+
+.menu-lateral .navbar ul a:nth-child(4) {
+    color: var(--corLetraMenu);
+}
+
+.menu-lateral .navbar ul a:nth-child(4) li {
+    background-color: var(--corPrincipal);
+}
+
+.menu-lateral .navbar ul a:nth-child(5) {
+    color: var(--corLetraMenu);
+}
+
+.menu-lateral .navbar ul a:nth-child(5) li {
+    background-color: var(--corPrincipal);
+}
+
+.menu-lateral .navbar ul a:hover {
+    color: var(--corForte);
+}
+
+/* --------------------------- */
+.aplicacao {
+    padding: 0px 10px 8px 40px;
+    /* background-color: aqua; */
+}
+
+/* ---------------NÃO SEI AINDA------------ */
+
+.passo:nth-child(1) {
+    margin-top: 20px;
+}
+
+.passo {
+    max-width: 40vw;
+    margin-top: 25px;
+    padding: 1vh 1vw 1vh 1vw;
+    background-color: #E4CBFD;
+    border-radius: 0.4vw;
+    min-height: 120px;
+}
+
+.passos {
+    display: flex;
+    flex-direction: row;
+}
+
+.passos img {
+    display: flex;
+    margin-top: 15vh;
+    margin-right: 10px;
+}
+
+
+.botao_download{
+    display: flex;
+    justify-content: end;
+}
+
+.botao_download button{
+    background-color: #812FCD;
+    color: #fff;
+    min-width: 1vw;
+    /* border-radius: 5px; */
+    border: 2px;
+    border-style: groove;
+    border-color: #812FCD;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    padding: 1vh;
+    font-size: min(15px, 15vh);
+    font-weight: 400;
+    cursor: pointer;
+    /* display: flex; */
+    text-align: right;
+    /* margin-bottom: 40vh; */
+
+    border: none;
+    border-radius: 0.625em;
+
+    /* cursor: pointer; */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+}
+
+.botao_download button:hover {
+    background-color: #812fcd00;
+    color: #812FCD;
+    transition: 0.8s;
+}
+
+#div_bloco_funciona {
+    display: flex;
+    flex-direction: row;
+
+}
+
+#div_funciona {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+}
+
+#div_bloco_funciona {
+    flex-direction: column;
+    padding: 15px 2px;
+    align-items: flex-start;
+}
+
+#div_destaque_txt_funciona b {
+    font-size: var(--tamanhoLetraDestaque);
+    font-weight: 600;
+}
+
+#div_txt_funciona h3 {
+    margin-bottom: 15px;
+}
+
+#div_txt_funciona p {
+    font-size: min(26px, 30vh);
+    font-weight: 200;
+    /* margin-left: 1.5vw; */
+}
+
+#container_passos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* align-items: center; */
+}
+
+#div_img_numeros img {
+    margin: 35px 5px;
+    height: 77%;
+}
+
+.destaque_txt_2 b {
+    color: #6B0CC5;
+    font-size: min(18px, 30vh);
+}
+
+
+#div_texto_passo p {
+    font-weight: 400;
+    font-size: min(15px, 30vh);
+}
+
+
+.botao_download button:after {
+    content: "";
+    background: #fbfafc;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+}
+
+.botao_download button:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}

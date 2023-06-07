@@ -1,0 +1,150 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #b9abc5;
+    margin: 0%;
+    height: 100%;
+}
+
+#div_principal_contato {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* margin: 90px 13vw 2vw 13vw; */
+    min-height: 77vh;
+}
+
+.cadastrado {
+    border-radius: 0px 10px 10px 0px;
+    display: flex;
+    align-items: center;
+    min-width: 25.7vw;
+}
+
+
+
+.cadastrado #lateral {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.moldura {
+    background-color: #ffffff;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 0px 0px 10px;
+    min-height: 23vw;
+}
+
+
+.cadastrado p {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.txt_2 {
+    /* font-size: 12px; */
+    text-align: center;
+}
+
+#botao_login {
+    margin: 1.5rem 0 2rem 0;
+}
+
+@media only screen and (max-width: 992px) {
+
+    .campo label.user-label {
+        /* font-size: 0.3rem; */
+        color: #020202;
+        font-weight: 500;
+        position: relative;
+        top: 0.9rem;
+        margin: 0 0 0 7px;
+        padding: 0 3px;
+        background: #ffffff;
+        width: fit-content;
+        z-index: 1;
+        border-radius: 1px;
+    }
+
+ 
+
+    input[type=text]:focus,
+    input[type=password]:focus {
+        border-color: #812FCD;
+        outline: none;
+    }
+
+    .cadastrado {
+        display: none;
+    }
+
+    #div_moldura_login {
+        box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+        border-radius: 10px 10px 10px 10px;
+
+    }
+
+    #botao_login {
+        font-size: 11px;
+    }
+
+
+
+    #div_moldura_login p {
+        font-size: 14px;
+    }
+
+    #div_img_login {
+        display: none;
+    }
+
+    #div_campos .campo input {
+        width: 50vw;
+    }
+
+    #botao_login button {
+        min-width: 30vw;
+        font-size: 11px;
+    }
+    #div_principal_contato {
+   
+        margin: 90px 13vw 0px 13vw;
+        min-height: auto;
+    }
+
+    #campo1_login{
+        margin-bottom: auto;
+    }
+}
+
+
+
+@media only screen and (max-width: 526px) {
+
+    .campo input[type=text],
+    input[type=password] {
+        padding: 8px 7px;
+        font-size: 0.7rem;
+        border: 2px #000000 solid;
+        border-radius: 2px;
+        background: #ffffff;
+        width: 25vw;
+        margin: 5px 0px;
+    }
+
+    .moldura {
+        padding: 2rem;
+        min-height: 0;
+    }
+
+    #div_principal_contato {
+   
+        margin: 90px 1vw 0px 1vw;
+        min-height: auto;
+    }
+}
